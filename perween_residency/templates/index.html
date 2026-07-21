@@ -1,0 +1,402 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Perween Residency</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+
+
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+{% include 'navbar.html' %}
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<div>
+
+<h1>THE PERWEEN RESIDENCY</h1>
+
+<p>
+Luxury • Comfort • Elegance
+</p>
+
+
+<a href="{% url 'booking' %}" class="btn btn-gold mt-3">
+Book Your Stay
+</a>
+
+</div>
+
+</section>
+
+<!-- About Section -->
+
+<section class="container py-5 about">
+
+<h2 class="section-title">
+About Our Hotel
+</h2>
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80"
+class="img-fluid">
+
+</div>
+
+<div class="col-lg-6">
+
+<h3 class="fw-bold">
+Welcome to The Perween Residency
+</h3>
+
+<p class="mt-3">
+
+The Perween Residency is a premium luxury hotel designed to provide
+an unforgettable hospitality experience. Our elegant rooms,
+world-class facilities, fine dining, and exceptional customer service
+ensure that every guest enjoys comfort and relaxation.
+
+</p>
+
+<p>
+
+Whether you are visiting for business, a family vacation, or a special
+occasion, our hotel offers the perfect blend of luxury and convenience.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Why Choose Us -->
+
+<section class="bg-light py-5">
+
+<div class="container">
+
+<h2 class="section-title">
+Why Choose The Perween Residency?
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="feature-box text-center">
+
+<i class="bi bi-building"></i>
+
+<h4 class="mt-3">
+Luxury Rooms
+</h4>
+
+<p>
+Modern interiors with premium comfort.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="feature-box text-center">
+
+<i class="bi bi-wifi"></i>
+
+<h4 class="mt-3">
+Free High-Speed WiFi
+</h4>
+
+<p>
+Stay connected throughout your stay.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="feature-box text-center">
+
+<i class="bi bi-cup-hot-fill"></i>
+
+<h4 class="mt-3">
+Fine Dining
+</h4>
+
+<p>
+Enjoy delicious cuisine from expert chefs.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="feature-box text-center">
+
+<i class="bi bi-car-front-fill"></i>
+
+<h4 class="mt-3">
+Free Parking
+</h4>
+
+<p>
+Safe and secure parking facility.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="feature-box text-center">
+
+<i class="bi bi-person-workspace"></i>
+
+<h4 class="mt-3">
+24/7 Service
+</h4>
+
+<p>
+Professional staff available anytime.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="feature-box text-center">
+
+<i class="bi bi-stars"></i>
+
+<h4 class="mt-3">
+Premium Experience
+</h4>
+
+<p>
+A perfect blend of luxury and hospitality.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Featured Rooms -->
+
+<section class="container py-5">
+
+<h2 class="section-title">
+Featured Rooms
+</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="card room-card">
+
+<img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304"
+class="card-img-top">
+
+<div class="card-body">
+
+<h5>Deluxe Room</h5>
+
+<p>Elegant room with king-size bed and luxury amenities.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card room-card">
+
+<img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a"
+class="card-img-top">
+
+<div class="card-body">
+
+<h5>Executive Room</h5>
+
+<p>Perfect for business travelers and professionals.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card room-card">
+
+<img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461"
+class="card-img-top">
+
+<div class="card-body">
+
+<h5>Luxury Suite</h5>
+
+<p>Experience unmatched elegance and comfort.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content">
+
+            <div class="modal-header bg-dark text-white">
+
+                <h5 class="modal-title" id="loginModalLabel">
+                    Login to The Perween Residency
+                </h5>
+
+                <button type="button"
+                        class="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close">
+                </button>
+
+            </div>
+
+            <div class="modal-body">
+
+                <form method="POST" action="{% url 'login' %}">
+
+    {% csrf_token %}
+
+    <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="Enter Full Name"
+            required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input
+            type="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email Address"
+            required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input
+            type="text"
+            name="phone"
+            class="form-control"
+            placeholder="Enter Phone Number"
+            required>
+    </div>
+
+    <div class="mb-3">
+    <label class="form-label">Address</label>
+
+    <textarea
+        name="address"
+        class="form-control"
+        rows="3"
+        placeholder="Enter Your Full Address"
+        required></textarea>
+</div>
+
+    <button type="submit" class="btn btn-warning w-100">
+        Continue
+    </button>
+
+</form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Footer -->
+
+<footer>
+
+<h4>The Perween Residency</h4>
+
+<p>
+Luxury Hospitality • Premium Comfort • Memorable Experiences
+</p>
+
+<p>
+📍 Mithapur, Bihar, India
+</p>
+
+<p>
+📞 +91 9876543210
+</p>
+
+<p>
+✉ info@perweenresidency.com
+</p>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

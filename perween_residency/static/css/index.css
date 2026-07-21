@@ -1,0 +1,138 @@
+/* General */
+body{
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x:hidden;
+}
+
+/* Navbar */
+.navbar{
+    background: rgba(0,0,0,0.9);
+}
+
+.navbar-brand{
+    color:#D4AF37 !important;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-link{
+    color:white !important;
+    font-size:18px;
+    margin-left:10px;
+}
+
+.nav-link:hover{
+    color:#D4AF37 !important;
+}
+
+/* Logo */
+.hotel-logo{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#FFD700,#D4AF37);
+    color:#111;
+    font-size:22px;
+    font-weight:bold;
+    font-family:'Times New Roman', serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:2px solid white;
+}
+
+/* Hero Section */
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1500&q=80');
+
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:70px;
+    font-weight:bold;
+}
+
+.hero p{
+    font-size:22px;
+    margin-top:20px;
+}
+
+.btn-gold{
+    background:#D4AF37;
+    color:black;
+    font-weight:bold;
+    padding:12px 30px;
+    border:none;
+}
+
+.btn-gold:hover{
+    background:white;
+}
+
+/* Section Title */
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:40px;
+    font-weight:bold;
+    color:#111;
+}
+
+/* About */
+.about img{
+    border-radius:15px;
+}
+
+/* Features */
+.feature-box{
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-10px);
+}
+
+.feature-box i{
+    font-size:50px;
+    color:#D4AF37;
+}
+
+/* Rooms */
+.room-card img{
+    height:250px;
+    object-fit:cover;
+}
+
+.room-card{
+    transition:0.4s;
+}
+
+.room-card:hover{
+    transform:scale(1.03);
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer h4{
+    color:#D4AF37;
+}

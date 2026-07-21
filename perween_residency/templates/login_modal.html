@@ -1,0 +1,75 @@
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+
+<div class="modal-dialog modal-dialog-centered">
+
+<div class="modal-content">
+
+<!-- HEADER -->
+<div class="modal-header bg-dark text-white">
+
+<h5 class="modal-title">
+    <i class="bi bi-person-circle"></i> Login to The Perween Residency
+</h5>
+
+<button type="button"
+        class="btn-close btn-close-white"
+        data-bs-dismiss="modal">
+</button>
+
+</div>
+
+<!-- BODY -->
+<div class="modal-body">
+
+<form method="POST" action="{% url 'login' %}">
+    {% csrf_token %}
+
+    <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input type="text"
+               name="name"
+               class="form-control"
+               placeholder="Enter your name"
+               required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email"
+               name="email"
+               class="form-control"
+               placeholder="Enter your email"
+               required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Phone Number</label>
+        <input type="text"
+               name="phone"
+               class="form-control"
+               placeholder="Enter your phone number"
+               required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Address</label>
+        <textarea name="address"
+                  class="form-control"
+                  rows="3"
+                  placeholder="Enter your full address"
+                  required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-warning w-100">
+        Login / Continue
+    </button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
